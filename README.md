@@ -1,0 +1,5 @@
+![nimap_1](https://github.com/user-attachments/assets/eb81f776-7569-4e64-8639-0bba7ee26936)
+![nimap_2](https://github.com/user-attachments/assets/eb03d8c9-85eb-41fa-b6ef-3fe2c0aaceb7)
+![nimap_3](https://github.com/user-attachments/assets/61ea662b-8040-4df3-9921-360c19cdfefc)
+![nimap_4](https://github.com/user-attachments/assets/8b92fc38-79f5-465d-af18-4b2163c2de48)
+![nimap_json_format](https://github.com/user-attachments/assets/2e72495a-c077-4625-a686-7687fa266be2)
