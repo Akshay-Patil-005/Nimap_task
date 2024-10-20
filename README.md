@@ -24,30 +24,30 @@ Before starting, make sure you have the following installed:
 First, clone the repository using Git.
 
 
-# git clone https://github.com/Akshay-Patil-005/Nimap_task.git
+ git clone https://github.com/Akshay-Patil-005/Nimap_task.git
 cd Nimap_task
 
-2. Set Up a Virtual Environment
+# 2. Set Up a Virtual Environment
 Create and activate a virtual environment to isolate the project dependencies.
 
 For Windows:
 
-# python -m venv venv
-# venv\Scripts\activate
+python -m venv venv
+venv\Scripts\activate
 
-3. Install Dependencies
+# 3. Install Dependencies
 Install the required packages listed in requirements.txt.
 
-# pip install -r requirements.txt
+ pip install -r requirements.txt
 
-4. Database Setup
+# 4. Database Setup
 Ensure MySQL is installed and running. Afterward, follow these steps:
 
-# Create a MySQL Database:
+ Create a MySQL Database:
 
 Log in to MySQL and create a database.
 
-# CREATE DATABASE nimap_db;
+ CREATE DATABASE nimap_db;
 
 Update the DATABASES settings in the settings.py file to match your MySQL credentials:
 
@@ -68,17 +68,18 @@ DATABASES = {
 Apply Migrations:
 
 Run the following commands to apply migrations and create the necessary database tables:
-'''
+
 python manage.py makemigrations
 python manage.py migrate
-'''
-5. Create a Superuser
+
+
+# 5. Create a Superuser
 To access the Django admin panel and manage clients and projects, create a superuser account:
 
 
-# python manage.py createsuperuser
+ python manage.py createsuperuser
 
-6. Run the Application
+# 6. Run the Application
 Start the Django development server with the following command:
 
 python manage.py runserver
