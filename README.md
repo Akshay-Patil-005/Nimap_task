@@ -19,7 +19,7 @@ Before starting, make sure you have the following installed:
 
 ### Installation Steps
 
-#### 1. Clone the Repository
+# 1. Clone the Repository
 
 First, clone the repository using Git.
 
