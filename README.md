@@ -23,7 +23,7 @@ Before starting, make sure you have the following installed:
 
 First, clone the repository using Git.
 
-```bash
+
 git clone https://github.com/Akshay-Patil-005/Nimap_task.git
 cd Nimap_task
 2. Set Up a Virtual Environment
