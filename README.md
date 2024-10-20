@@ -1,43 +1,85 @@
 As Per the Requirements.
 
-Consider the following scenario where we have 3 entities in our system.
+# Project Name: Client & Project Management System
 
-1. User
+## Description
+This project is built using Django and Django REST Framework. It allows users to manage clients and assign projects to clients. Each project can have multiple users assigned to it. 
 
-2. Client
+The application is designed with MySQL as the database backend, and all functionality, such as creating clients, assigning projects, and viewing projects, is done via APIs.
 
-3. Project
+## Getting Started
+
+### Prerequisites
+
+Before starting, make sure you have the following installed:
+
+- **Python 3.x**
+- **MySQL**
+- **Git**
+
+### Installation Steps
+
+#### 1. Clone the Repository
+
+First, clone the repository using Git.
+
+```bash
+git clone https://github.com/Akshay-Patil-005/Nimap_task.git
+cd Nimap_task
+2. Set Up a Virtual Environment
+Create and activate a virtual environment to isolate the project dependencies.
+
+For Windows:
+
+python -m venv venv
+venv\Scripts\activate
+
+3. Install Dependencies
+Install the required packages listed in requirements.txt.
+
+pip install -r requirements.txt
+
+4. Database Setup
+Ensure MySQL is installed and running. Afterward, follow these steps:
+
+Create a MySQL Database:
+
+Log in to MySQL and create a database.
+
+CREATE DATABASE nimap_db;
+
+Update the DATABASES settings in the settings.py file to match your MySQL credentials:
+
+python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nimap_db',
+        'USER': 'your_mysql_username',
+        'PASSWORD': 'your_mysql_password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+Apply Migrations:
+
+Run the following commands to apply migrations and create the necessary database tables:
+
+python manage.py makemigrations
+python manage.py migrate
+
+5. Create a Superuser
+To access the Django admin panel and manage clients and projects, create a superuser account:
 
 
+python manage.py createsuperuser
 
-We have the number of users registered in our system.
+6. Run the Application
+Start the Django development server with the following command:
 
-You can use Django’s default admin template to create/register users but not other entities or you can make REST APIs for users as well if you want.
-
- 
-You have to perform the following tasks :
-
-1. Register a client
-
-2. Fetch clients info
-
-3. Edit/Delete client info
-
-4. Add new projects for a client and assign users to those projects.
-
-5. Retrieve assigned projects to logged-in users.
-
- 
-
-Things to consider :
-
-1. The system has many users.
-
-2. The system has many clients.
-
-3. A client can have many projects
-
-4. A single project can be assigned to many users.
+python manage.py runserver
+The application should now be running at http://127.0.0.1:8000/.
 
 # Commented code for various databases such as Sqlite and Plsql. Default database used Mysql
 
