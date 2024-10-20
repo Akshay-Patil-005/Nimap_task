@@ -52,7 +52,8 @@ Log in to MySQL and create a database.
 Update the DATABASES settings in the settings.py file to match your MySQL credentials:
 
 python
-'''DATABASES = {
+
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'nimap_db',
@@ -62,7 +63,7 @@ python
         'PORT': '3306',
     }
 }
-'''
+
 
 Apply Migrations:
 
