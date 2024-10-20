@@ -32,13 +32,13 @@ Create and activate a virtual environment to isolate the project dependencies.
 
 For Windows:
 
-python -m venv venv
-venv\Scripts\activate
+### python -m venv venv
+### venv\Scripts\activate
 
 # 3. Install Dependencies
 Install the required packages listed in requirements.txt.
 
- pip install -r requirements.txt
+### pip install -r requirements.txt
 
 # 4. Database Setup
 Ensure MySQL is installed and running. Afterward, follow these steps:
@@ -47,13 +47,13 @@ Ensure MySQL is installed and running. Afterward, follow these steps:
 
 Log in to MySQL and create a database.
 
- CREATE DATABASE nimap_db;
+### CREATE DATABASE nimap_db;
 
 Update the DATABASES settings in the settings.py file to match your MySQL credentials:
 
 python
 
-DATABASES = {
+''' DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'nimap_db',
@@ -62,27 +62,27 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     }
-}
+} '''
 
 
 Apply Migrations:
 
 Run the following commands to apply migrations and create the necessary database tables:
 
-python manage.py makemigrations
-python manage.py migrate
+### python manage.py makemigrations
+### python manage.py migrate
 
 
 # 5. Create a Superuser
 To access the Django admin panel and manage clients and projects, create a superuser account:
 
 
- python manage.py createsuperuser
+### python manage.py createsuperuser
 
 # 6. Run the Application
 Start the Django development server with the following command:
 
-python manage.py runserver
+### python manage.py runserver
 The application should now be running at http://127.0.0.1:8000/.
 
 # Commented code for various databases such as Sqlite and Plsql. Default database used Mysql
